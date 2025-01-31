@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>老年人养老幸福感调查问卷</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa; /* 全页面浅红色背景 */
+    }
+    .container {
+      font-family: 'SimSun', serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f27f7f;
+      border: 2px solid #ff6666;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+    .question {
+      margin-bottom: 20px;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .question label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .options {
+      margin-left: 20px;
+    }
+    .options label {
+      display: block;
+      margin: 5px 0;
+    }
+    .submit-btn {
+      display: block;
+      width: 200px;
+      margin: 30px auto;
+      padding: 10px;
+      background: #fff; /* 白色背景 */
+      color: #ff6666; /* 红色文字 */
+      border: 2px solid #ff6666; /* 红色边框 */
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .submit-btn:hover {
+      background: #ff6666; /* 红色背景 */
+      color: #fff; /* 白色文字 */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>老年人养老幸福感调查问卷</h1>
+    <p>您好！为了更全面地了解当下中老年人的生活幸福感现状，特邀您参加此次问卷调查。本问卷匿名发放，信息将完全保密，所有数据仅用于统计分析，请以真实情况作答。您的如实填写将会为本次调查提供极大帮助，非常感谢您的参与！</p>
+    <form id="surveyForm">
+      <div class="question">
+        <label>1. 您的年龄是？</label>
+        <div class="options">
+          <label><input type="radio" name="age" value="50-55"> 50-55岁</label>
+          <label><input type="radio" name="age" value="56-60"> 56-60岁</label>
+          <label><input type="radio" name="age" value="61-65"> 61-65岁</label>
+          <label><input type="radio" name="age" value="66-70"> 66-70岁</label>
+          <label><input type="radio" name="age" value="71+"> 71岁以上</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <label>2. 您目前的居住状况是？</label>
+        <div class="options">
+          <label><input type="radio" name="living" value="独居"> 独居</label>
+          <label><input type="radio" name="living" value="与配偶同住"> 与配偶同住</label>
+          <label><input type="radio" name="living" value="与子女同住"> 与子女同住</label>
+          <label><input type="radio" name="living" value="养老院"> 养老院</label>
+        </div>
+      </div>
+      
+      <!-- Question 3 -->
+      <div class="question">
+        <label>3、您的子女数量？</label>
+        <div class="options">
+          <label><input type="radio" name="children" value="无"> A.无</label>
+          <label><input type="radio" name="children" value="1个"> B.1个</label>
+          <label><input type="radio" name="children" value="2个"> C.2个</label>
+          <label><input type="radio" name="children" value="3个以上"> D.3个以上</label>
+        </div>
+      </div>
+
+    
+      <!-- Question 4 -->
+      <div class="question">
+        <label>4、现在是否与子女同住？</label>
+       <div class="options">
+          <label><input type="radio" name="live_with_children" value="是"> A.是</label>
+          <label><input type="radio" name="live_with_children" value="否"> B.否</label>
+        </div>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="question">
+       <label>5、您的子女是否在本市居住？</label>
+        <div class="options">
+          <label><input type="radio" name="children_location" value="是"> A.是</label>
+          <label><input type="radio" name="children_location" value="是，但是距离较远"> B.是，但是距离较远</label>
+          <label><input type="radio" name="children_location" value="子女均在外地打工"> C.子女均在外地打工</label>
+        </div>
+      </div>
+
+      <!-- Question 6 -->
+      <div class="question">
+       <label>6、您家庭成员之间感情如何？</label>
+        <div class="options">
+          <label><input type="radio" name="family_relationship" value="很好"> A.很好</label>
+          <label><input type="radio" name="family_relationship" value="比较好"> B.比较好</label>
+          <label><input type="radio" name="family_relationship" value="一般"> C.一般</label>
+          <label><input type="radio" name="family_relationship" value="较不好"> D.较不好</label>
+         <label><input type="radio" name="family_relationship" value="很不好"> E.很不好</label>
+       </div>
+      </div>
+
+      <!-- Question 7 -->
+      <div class="question">
+        <label>7、您每月收入（单位：元）？</label>
+        <div class="options">
+          <label><input type="radio" name="income" value="1000以下"> A.1000以下</label>
+          <label><input type="radio" name="income" value="1000-3000"> B.1000-3000</label>
+          <label><input type="radio" name="income" value="3000-5000"> C.3000-5000</label>
+          <label><input type="radio" name="income" value="5000以上"> D.5000以上</label>
+        </div>
+      </div>
+
+      <!-- Question 8 -->
+      <div class="question">
+        <label>8、您的婚姻状况？</label>
+        <div class="options">
+         <label><input type="radio" name="marital_status" value="已婚且配偶健在"> A.已婚且配偶健在</label>
+         <label><input type="radio" name="marital_status" value="丧偶"> B.丧偶</label>
+          <label><input type="radio" name="marital_status" value="离异"> C.离异</label>
+          <label><input type="radio" name="marital_status" value="未婚或其他"> D.未婚或其他</label>
+        </div>
+      </div>
+
+      <!-- Question 9 -->
+      <div class="question">
+        <label>9、您的学历？</label>
+        <div class="options">
+          <label><input type="radio" name="education" value="小学及以下"> A.小学及以下</label>
+          <label><input type="radio" name="education" value="初中"> B.初中</label>
+          <label><input type="radio" name="education" value="高中"> C.高中</label>
+          <label><input type="radio" name="education" value="专科（包括中专、大专）"> D.专科（包括中专、大专）</label>
+          <label><input type="radio" name="education" value="大学本科及以上"> E.大学本科及以上</label>
+          <label><input type="radio" name="education" value="其他（如夜校、老年大学）"> F.其他（如夜校、老年大学）</label>
+        </div>
+      </div>
+
+     <!-- Question 10 -->
+      <div class="question">
+        <label>10、您离/退休前的工作？</label>
+        <div class="options">
+          <label><input type="radio" name="previous_job" value="事业单位"> A.事业单位</label>
+          <label><input type="radio" name="previous_job" value="企业单位"> B.企业单位</label>
+          <label><input type="radio" name="previous_job" value="政府部门"> C.政府部门</label>
+          <label><input type="radio" name="previous_job" value="个体经营"> D.个体经营</label>
+          <label><input type="radio" name="previous_job" value="务农"> E.务农</label>
+          <label><input type="radio" name="previous_job" value="其他"> F.其他</label>
+        </div>
+      </div>
+
+      <!-- Question 11 -->
+      <div class="question">
+        <label>11、您是否需要定期医疗护理或康复服务？</label>
+        <div class="options">
+          <label><input type="radio" name="medical_care" value="是"> A.是</label>
+          <label><input type="radio" name="medical_care" value="否"> B.否</label>
+        </div>
+      </div>
+
+      <!-- Question 12 -->
+      <div class="question">
+        <label>12、您如何度过闲暇时间？（多选题）</label>
+        <div class="options">
+          <label><input type="checkbox" name="leisure_time" value="在家看电视"> A.在家看电视</label>
+          <label><input type="checkbox" name="leisure_time" value="老年活动中心"> B.老年活动中心</label>
+          <label><input type="checkbox" name="leisure_time" value="去公园锻炼身体"> C.去公园锻炼身体</label>
+          <label><input type="checkbox" name="leisure_time" value="与邻居聊天"> D.与邻居聊天</label>
+          <label><input type="checkbox" name="leisure_time" value="其他"> E.其他</label>
+        </div>
+      </div>
+
+      <!-- Question 13 -->
+      <div class="question">
+        <label>13、您能接受的养老模式？</label>
+        <div class="options">
+        <label><input type="radio" name="elderly_care_mode" value="居家养老"> A.居家养老</label>
+          <label><input type="radio" name="elderly_care_mode" value="社区养老"> B.社区养老</label>
+          <label><input type="radio" name="elderly_care_mode" value="专业养老机构"> C.专业养老机构</label>
+        </div>
+      </div>
+
+      <!-- Question 14 -->
+      <div class="question">
+       <label>14、您能接受的养老护理价格区间？</label>
+        <div class="options">
+          <label><input type="radio" name="care_price" value="2500元-3500元"> A.2500元-3500元</label>
+          <label><input type="radio" name="care_price" value="3500元-5000元"> B.3500元-5000元</label>
+          <label><input type="radio" name="care_price" value="5000元以上"> C.5000元以上</label>
+        </div>
+      </div>
+
+      <!-- Question 15 -->
+      <div class="question">
+        <label>15、您需要哪些养老服务项目？（多选题）</label>
+        <div class="options">
+          <label><input type="checkbox" name="care_services" value="家政"> A.家政</label>
+          <label><input type="checkbox" name="care_services" value="餐饮"> B.餐饮</label>
+          <label><input type="checkbox" name="care_services" value="康复"> C.康复</label>
+          <label><input type="checkbox" name="care_services" value="娱乐"> D.娱乐</label>
+          <label><input type="checkbox" name="care_services" value="医疗保健"> E.医疗保健</label>
+          <label><input type="checkbox" name="care_services" value="其他"> F.其他</label>
+       </div>
+     </div>
+
+      <button type="submit" class="submit-btn">提交问卷</button>
+    </form>
+  </div>
+
+  <script>
+    // 保持原有JavaScript代码不变
+    document.getElementById('surveyForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const formData = new FormData(e.target);
+      const data = {};
+      
+      // Process radio buttons
+      formData.forEach((value, key) => {
+        if (!data[key]) {
+          data[key] = value;
+        }
+      });
+      
+      // Process checkboxes
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach(checkbox => {
+        if (checkbox.checked) {
+          const name = checkbox.name;
+          if (!data[name]) {
+            data[name] = [];
+          }
+          if (Array.isArray(data[name])) {
+            data[name].push(checkbox.value);
+          } else {
+            data[name] = [data[name], checkbox.value];
+          }
+        }
+      });
+
+      // Validate required fields
+      const requiredFields = ['age', 'living', 'children', 'live_with_children'];
+      let isValid = true;
+      
+      requiredFields.forEach(field => {
+        if (!data[field]) {
+          isValid = false;
+          alert(`请填写第${field}题`);
+        }
+      });
+
+      if (isValid) {
+        alert('感谢您的参与！');
+        e.target.reset();
+        // Redirect to thank you page after 2 seconds
+        setTimeout(() => {
+          try {
+            window.location.href = '/thank-you.html';
+          } catch (error) {
+            console.error('Redirect failed:', error);
+            alert('页面跳转失败，请手动访问：/thank-you.html');
+          }
+        }, 2000);
+      }
+    });
+  </script>
+</body>
+</html>
