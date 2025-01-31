@@ -263,11 +263,11 @@
           if (!data[name]) {
             data[name] = [];
           }
-          if (Array.isArray(data[name])) {
-            data[name].push(checkbox.value);
-          } else {
-            data[name] = [data[name], checkbox.value];
+          // Ensure data[name] is always an array
+          if (!Array.isArray(data[name])) {
+            data[name] = [data[name]];
           }
+          data[name].push(checkbox.value);
         }
       });
 
